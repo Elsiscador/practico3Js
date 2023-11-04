@@ -4,15 +4,18 @@
 
 let ciudades = [];
 
-while (ciudades) {
-  let ciudad = prompt("Ingrese el nombre de una ciudad o presione cancelar para finalizar:");
-  
-  if (ciudad === null) {
-    break;
+while (confirm ("QUERES INGRESAR  UNA CIUDAD:")){
+
+  let ciudad = prompt('ingrese una ciudad')
+ 
+  while(!isNaN(ciudad)){
+    ciudad =prompt('INGRESASTE UN NUMERO')
   }
   
   ciudades.push(ciudad);
-}
+  }
+  
+
 
 document.write('<ul>')
 document.write("El Arreglo de ciudades tiene : " +  ciudades.length + "<br>");
