@@ -1,0 +1,9 @@
+th, td, table{
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+h2{
+    margin: 1rem 0px 1rem 0px;
+}
