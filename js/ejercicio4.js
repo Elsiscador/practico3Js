@@ -1,6 +1,9 @@
 //Escribir el código de una función a la que se pasa como parámetro un número
 //entero y devuelve como resultado una cadena de texto que indica si el número es
 //par o impar. Mostrar por pantalla el resultado devuelto por la función
+
+document.write("<h2>Ejercicio 4</h2>")
+
 function definirNumero(numero) {
   while (isNaN(numero)) {
     numero = prompt("No ingresaste un número, por favor intenta nuevamente:");
@@ -15,3 +18,5 @@ let numero = parseInt(prompt("ingrese un numero"));
 let resultado = definirNumero(numero);
 
 document.write(resultado);
+
+document.write("<hr>")

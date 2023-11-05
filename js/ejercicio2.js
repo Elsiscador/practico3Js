@@ -2,6 +2,8 @@
 // de ciudades y almacenarlas en un arreglo, cuando el usuario selecciona cancelar
 // debe mostrar el arreglo generado, luego realizar las siguientes acciones:
 
+document.write("<h2>Ejercicio 2</h2>")
+
 let ciudades = [];
 
 while (confirm("QUERES INGRESAR  UNA CIUDAD:")) {
@@ -36,9 +38,11 @@ document.write("</ul>");
 
 ciudades[1] = "Barcelona";
 document.write("<ul>");
-document.write("<li><h2>El Arreglo Generado es:</h2></li>");
+document.write("<li><h3>El Arreglo Generado es:</h3></li>");
 for (let i = 0; i < ciudades.length; i++) {
   document.write("<li>" + ciudades[i] + "</li>");
 }
 
 document.write("</ul>");
+
+document.write("<hr>")

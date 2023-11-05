@@ -2,7 +2,13 @@
 // A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, 
 // sólo por minúsculas o por una mezcla de ambas.
 
+document.write("<h2>Ejercicio5</h2>")
+
 let fraseIngresada = prompt("Ingresa una frase")
+
+while(!isNaN(fraseIngresada)){
+    fraseIngresada = prompt("Ingresaste número, debe ser una frase")
+}
 
 function verificacionFrase(frase){
     if(frase === frase.toLowerCase()){
@@ -16,3 +22,5 @@ function verificacionFrase(frase){
 }
 
 verificacionFrase(fraseIngresada)
+
+document.write("<hr>")

@@ -1,6 +1,8 @@
 //1- Crear un array llamado meses y que almacene el nombre de los doce meses del año.
 //Mostrar por pantalla en forma de lista los doce nombres del arreglo.
 
+document.write("<h2>Ejercicio 1</h2>")
+
 const meses = [
   "Enero",
   "Febrero",
@@ -16,9 +18,11 @@ const meses = [
   "Diciembre",
 ];
 
-document.write("<h1>Lista De Meses</h1>");
+document.write("<h3>Lista De Meses</h3>");
 document.write("<ul>");
 for (let i = 0; i < meses.length; i++) {
   document.write("<li>" + meses[i] + "</li>");
 }
 document.write("</ul>");
+
+document.write("<hr>")

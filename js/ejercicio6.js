@@ -6,6 +6,8 @@
 // lado B = 5
 // Output: 58
 
+document.write("<h2>Ejercicio 6</h2>")
+
 function calcularPerimetro(a,b){
     return  2*(a + b)
 };
@@ -21,3 +23,5 @@ while(isNaN(ladoB)){
 }
 
 document.write(`El perimetro del cuadrado es: ${calcularPerimetro(ladoA,ladoB)}`);
+
+document.write("<hr>")

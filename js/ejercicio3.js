@@ -3,6 +3,9 @@
 //de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y
 //anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces esta operación.
 
+document.write("<h2>Ejercicio 3</h2>")
+
+
 let resultados = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 for (let i = 0; i < 50; i++) {
@@ -18,13 +21,9 @@ document.write("<tr><th>Suma</th><th>Apariciones</th></tr>");
 for (let i = 0; i < resultados.length; i++) {
   let suma = i + 2;
   let apariciones = resultados[i];
-  document.write(
-    "<tr><td style='text-align: center;'>" +
-      suma +
-      "</td><td style='text-align: center;'>" +
-      apariciones +
-      "</td></tr>"
-  );
+  document.write(`<tr><td > ${suma} </td><td > ${apariciones} </td></tr>`);
 }
 
 document.write("</table>");
+
+document.write("<hr>")
