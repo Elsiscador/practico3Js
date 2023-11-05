@@ -4,28 +4,33 @@
 
 let ciudades = [];
 
-while (confirm ("QUERES INGRESAR  UNA CIUDAD:")){
+while (confirm("QUERES INGRESAR  UNA CIUDAD:")) {
+  let ciudad = prompt("ingrese una ciudad");
 
-  let ciudad = prompt('ingrese una ciudad')
- 
-  while(!isNaN(ciudad)){
-    ciudad =prompt('INGRESASTE UN NUMERO')
+  while (!isNaN(ciudad)) {
+    ciudad = prompt("INGRESASTE UN NUMERO");
   }
-  
+
   ciudades.push(ciudad);
-  }
-  
+}
 
+document.write("<ul>");
+document.write("El Arreglo de ciudades tiene : " + ciudades.length + "<br>");
+document.write("<li>Elemento de 1er posicion: " + ciudades[0] + " <br></li>");
+document.write("<li>Elemento de 3er posicion: " + ciudades[4] + " <br></li>");
+document.write(
+  "<li>Elemento de la ultima posicion: " +
+    ciudades[ciudades.length - 1] +
+    " <br></li>"
+);
 
-document.write('<ul>')
-document.write("El Arreglo de ciudades tiene : " +  ciudades.length + "<br>");
-document.write("<li>Elemento de 1er posicion: "+ ciudades[0] + " <br></li>");
-document.write("<li>Elemento de 3er posicion: "+ ciudades[4] + " <br></li>");
-document.write("<li>Elemento de la ultima posicion: "+ ciudades [ciudades.length - 1] + " <br></li>");
-
-ciudades.push('paris')
-document.write("<li>Elemento de la ultima posicion: "+ ciudades[ciudades.length -1] + " <br></li>");
-document.write("<li>Elemento de 2er posicion: "+ ciudades[1] + " <br></li>");
+ciudades.push("paris");
+document.write(
+  "<li>Elemento de la ultima posicion: " +
+    ciudades[ciudades.length - 1] +
+    " <br></li>"
+);
+document.write("<li>Elemento de 2er posicion: " + ciudades[1] + " <br></li>");
 
 document.write("</ul>");
 
